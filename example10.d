@@ -1,5 +1,3 @@
-module example10;
-
 import std.stdio;
 import std.conv;
 import std.math;
