@@ -27,5 +27,4 @@ void main() {
 
     auto iStr = to!int("10");
     writeln("Type : ", typeof(iStr).stringof);
-
 }
