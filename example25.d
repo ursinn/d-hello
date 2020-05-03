@@ -17,7 +17,12 @@ import std.concurrency;
 import std.range;
 
 void main() {
-    
+    // int var1 = 10;
+    mixin MakeType!(int, 10);
+
+    mixin GetSum!(double);
+    writeln("1.2 + 2.3 = ",
+    add(1.2, 2.3));
 }
 
 mixin template MakeType(T, T x) {
