@@ -1,6 +1,39 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/java,maven,windows,jetbrains+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,maven,windows,jetbrains+all
+# Created by https://www.toptal.com/developers/gitignore/api/java,maven,windows,jetbrains+all,d,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,maven,windows,jetbrains+all,d,visualstudiocode
+
+### D ###
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+
+# DUB
+.dub
+docs.json
+__dummy.html
+docs/
+
+# Code coverage
+*.lst
+
+### D Patch ###
+# Test Executables
+*-test-*
+
+# Comment to allow dub lock file to be version controlled as well
+dub.selections.json
 
 ### Java ###
 # Compiled class file
@@ -129,6 +162,17 @@ buildNumber.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -155,4 +199,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/java,maven,windows,jetbrains+all
+# End of https://www.toptal.com/developers/gitignore/api/java,maven,windows,jetbrains+all,d,visualstudiocode
